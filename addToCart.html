@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css"/>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <title>Add to cart</title>
+</head>
+<body class="bg-light">
+
+
+<header class="fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Untitled-1.png" alt="logo" width="130" class="img-fluid wow bounceInRight" data-wow-delay=".5s">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item wow fadeInLeft" data-wow-offset="0" data-wow-delay=".1s">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item wow fadeInLeft" data-wow-offset="0" data-wow-delay=".8s">
+                        <a class="nav-link" href="products.html">Products<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item wow fadeInLeft" data-wow-offset="0" data-wow-delay="1.1s">
+                        <a class="nav-link" href="delivery.html">Delivery</a>
+                    </li>
+                    <li class="nav-item wow fadeInLeft" data-wow-offset="0" data-wow-delay="1.4s">
+                        <a class="nav-link" href="contact.html">Contacts</a>
+                    </li>
+                    <li class="nav-item wow fadeInRight" data-wow-offset="0" data-wow-delay="1.4s" >
+                        <a class="nav-link" href="registration.html">Register</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-success wow fadeInRight" data-toggle="modal" data-target="#loginModal" data-wow-offset="0" data-wow-delay="1.4s">
+                    Login
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Button trigger modal -->
+                <div class="modal fade wow bounceInUp" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light">
+                                <h5 class="modal-title" id="loginModalLabel">Login Blog</h5>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            Remember Me
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Sing In</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+<section id="product" class="mb-3">
+    <div class="container">
+
+        <div class="row mt-3">
+            <!--<div class="col-lg-4 col-xl-4 col-md-4" >-->
+
+                <!--<div class="card bg-light mb-4">-->
+                    <!--<div class="card-body card-body1">-->
+                        <!--<img src="images/ico-cart.png" alt=""/>-->
+                        <!--<a href="">3 items in your cart</a>-->
+                        <!--<a href="" class="badge-warning">$155.00</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="accordion" id="accordionExample">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-header" id="headingOne">-->
+                            <!--<h5 class="mb-0 text-center">-->
+                                <!--<button class="btn btn-link text-uppercase" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
+                                    <!--electronics[230]-->
+                                <!--</button>-->
+                            <!--</h5>-->
+                        <!--</div>-->
+
+                        <!--<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">-->
+                            <!--<div class="card-body bg-light">-->
+                                <!--<ul class="list-group list-group-flush productA">-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Camera [100]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Computers, Laptops, Tablets[30]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Mobile Phone[80]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Sound and Visions[50]</li></a>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-header" id="headingTwo">-->
+                            <!--<h5 class="mb-0 text-center">-->
+                                <!--<button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
+                                    <!--clothes[1000]-->
+                                <!--</button>-->
+                            <!--</h5>-->
+                        <!--</div>-->
+                        <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">-->
+                            <!--<div class="card-body bg-light">-->
+                                <!--<ul class="list-group list-group-flush productA">-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Jeans [100]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Ladies[30]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Panjabi[80]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Shari-Collections[50]</li></a>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-header" id="headingThree">-->
+                            <!--<h5 class="mb-0 text-center">-->
+                                <!--<button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">-->
+                                    <!--food and beverages[500]-->
+                                <!--</button>-->
+                            <!--</h5>-->
+                        <!--</div>-->
+                        <!--<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">-->
+                            <!--<div class="card-body bg-light">-->
+                                <!--<ul class="list-group list-group-flush productA">-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Sandwich[100]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Biriani[30]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Banana[80]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Dairy Milk[50]</li></a>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-header" id="headingFour">-->
+                            <!--<h5 class="mb-0 text-center">-->
+                                <!--<button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">-->
+                                    <!--Phone-->
+                                <!--</button>-->
+                            <!--</h5>-->
+                        <!--</div>-->
+                        <!--<div id="collapseFive" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">-->
+                            <!--<div class="card-body bg-light">-->
+                                <!--<ul class="list-group list-group-flush productA">-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;SAMSUNG[100]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;TABLETS[30]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;MICROSOFT[80]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;SOUND AND VISION[50]</li></a>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-header" id="headingFive">-->
+                            <!--<h5 class="mb-0 text-center">-->
+                                <!--<button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">-->
+                                    <!--sports and leisures-->
+                                <!--</button>-->
+                            <!--</h5>-->
+                        <!--</div>-->
+                        <!--<div id="collapseSix" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">-->
+                            <!--<div class="card-body bg-light">-->
+                                <!--<ul class="list-group list-group-flush productA">-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Camera [100]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Computers, Laptops, Tablets[30]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Mobile Phone[80]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Sound and Visions[50]</li></a>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-header" id="headingSix">-->
+                            <!--<h5 class="mb-0 text-center">-->
+                                <!--<button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">-->
+                                    <!--entertainments[1000]-->
+                                <!--</button>-->
+                            <!--</h5>-->
+                        <!--</div>-->
+                        <!--<div id="collapseSeven" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">-->
+                            <!--<div class="card-body bg-light">-->
+                                <!--<ul class="list-group list-group-flush productA">-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Camera [100]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Computers, Laptops, Tablets[30]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Mobile Phone[80]</li></a>-->
+                                    <!--<a href="#"><li class="list-group-item bg-light">&gt;Sound and Visions[50]</li></a>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="card text-center">-->
+                    <!--<div class="card-body">-->
+                        <!--<img src="images/products/panasonic.jpg" alt="img" class="img-fluid"/>-->
+                        <!--<h6>Panasonic</h6>-->
+                        <!--<button type="submit">@</button>-->
+                        <!--<button type="submit">ADD TO</button>-->
+                        <!--<button type="submit">$222.00</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="card text-center">-->
+                    <!--<div class="card-body">-->
+                        <!--<img src="images/products/kindle.png" alt="img" class="img-fluid"/>-->
+                        <!--<h6>Kindle</h6>-->
+                        <!--<button type="submit">@</button>-->
+                        <!--<button type="submit">ADD TO</button>-->
+                        <!--<button type="submit">$222.00</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="card text-center">-->
+                    <!--<div class="card-body">-->
+                        <!--<img src="images/payment_methods.png" alt="img" class="img-fluid"/>-->
+                        <!--<h6>Payment Method</h6>-->
+                        <!--<button type="submit">@</button>-->
+                        <!--<button type="submit">ADD TO</button>-->
+                        <!--<button type="submit">$222.00</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            <!--</div>-->
+
+            <div>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="products.html">Product</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Product Details</li>
+                    </ol>
+                </nav>
+
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <div class="bg-transparent">
+                            <img id="zoom_01" src='images/products/small.jpg' data-zoom-image="images/products/large/f1.jpg" class="img-fluid mb-5"/>
+                        </div>
+                        <div class="m-auto mt-5">
+                            <button><i class="fa fa-search-minus"></i></button>
+                            <button><i class="fa fa-search-plus"></i></button>
+                            <button><i class="fa fa-user"></i></button>
+                            <button><i class="fa fa-lock-open"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+
+                        <h3>Fujifilm FinePix S2950 Digital Camera</h3>
+                        <p>- (14MP, 18x Optical Zoom) 3-inch LCD</p>
+                        <hr/>
+                        <form class="form-inline justify-content-between" action="">
+                            <label><h6>$222</h6></label>
+                            <input type="number" placeholder="Qty" class="btn-lg"/>
+                            <button class="btn btn-dark">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+                        </form>
+                        <hr/>
+
+
+                            <h4>100 items in stock</h4>
+
+                            <form class="form-inline justify-content-end" action="">
+                                <label for="color" class="mr-5">Color</label>
+                                <select name="color" id="color" class="ml-5 btn-lg">
+                                    <option value="" selected>Black</option>
+                                    <option value="">Blue</option>
+                                    <option value="">Red</option>
+                                </select>
+                            </form>
+                        <hr/>
+                        <p>
+                            14 Megapixels. 18.0 x Optical Zoom. 3.0-inch LCD Screen. Full HD photos and 1280 x 720p HD movie capture. ISO sensitivity ISO6400 at reduced resolution. Tracking Auto Focus. Motion Panorama Mode. Face Detection technology with Blink detection and Smile and shoot mode. 4 x AA batteries not included. WxDxH 110.2 ×81.4x73.4mm. Weight 0.341kg (excluding battery and memory card). Weight 0.437kg (including battery and memory card)
+                        </p>
+                        <a href="#moreDetails" class="float-right"><button class="btn-light">More Detatils</button></a>
+                    </div>
+                </div>
+
+                <div id="moreDetails" class="mt-5">
+                    <nav class="mt-5">
+                        <div class="nav nav-tabs justify-content-end" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Products Details</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">More Products</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div id="productDetails">
+
+                                <h3 class="mt-5">Product Informations</h3>
+                                <table class="table table-borderless">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Products Detatils</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">Brand:</th>
+                                        <td>Fujifilm</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Model:</th>
+                                        <td>FinePix S2950HD</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Released on:</th>
+                                        <td colspan="2">2011-01-28</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Dimensions:</th>
+                                        <td colspan="2">5.50" h x 5.50" w x 2.00" l, .75 pounds</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Display size:</th>
+                                        <td colspan="2">3</td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <h6>Features</h6>
+                                <p>
+                                    14 Megapixels. 18.0 x Optical Zoom. 3.0-inch LCD Screen. Full HD photos and 1280 x 720p HD movie capture. ISO sensitivity ISO6400 at reduced resolution. Tracking Auto Focus. Motion Panorama Mode. Face Detection technology with Blink detection and Smile and shoot mode. 4 x AA batteries not included. WxDxH 110.2 ×81.4x73.4mm. Weight 0.341kg (excluding battery and memory card). Weight 0.437kg (including battery and memory card).
+                                    OND363338
+                                </p>
+
+                                <h5>Editorial Reviews</h5>
+                                <h6>Manufacturer's Description</h6>
+                                <p>
+                                    With a generous 18x Fujinon optical zoom lens, the S2950 really packs a punch, especially when matched with its 14 megapixel sensor, large 3.0" LCD screen and 720p HD (30fps) movie capture.
+                                </p>
+                                <h6>Electric powered Fujinon 18x zoom lens</h6>
+                                <p>
+                                    The S2950 sports an impressive 28mm – 504mm* high precision Fujinon optical zoom lens. Simple to operate with an electric powered zoom lever, the huge zoom range means that you can capture all the detail, even when you're at a considerable distance away. You can even operate the zoom during video shooting. Unlike a bulky D-SLR, bridge cameras allow you great versatility of zoom, without the hassle of carrying a bag of lenses.
+                                </p>
+
+                                <h6>Impressive panoramas</h6>
+                                <p>
+                                    With its easy to use Panoramic shooting mode you can get creative on the S2950, however basic your skills, and rest assured that you will not risk shooting uneven landscapes or shaky horizons. The camera enables you to take three successive shots with a helpful tool which automatically releases the shutter once the images are fully aligned to seamlessly stitch the shots together in-camera. It's so easy and the results are impressive.
+                                </p>
+                                <h6>Sharp, clear shots</h6>
+                                <p>
+                                    Even at the longest zoom settings or in the most challenging of lighting conditions, the S2950 is able to produce crisp, clean results. With its mechanically stabilised 1/2 3", 14 megapixel CCD sensor, and high ISO sensitivity settings, Fujifilm's Dual Image Stabilisation technology combines to reduce the blurring effects of both hand-shake and subject movement to provide superb pictures.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                            <div id="relatedProducts">
+                                <div class="row justify-content-between mt-5" id="product_view">
+                                    <div class="col-md">
+                                        <h6>Sort By</h6>
+                                    </div>
+                                    <div class="col-md">
+                                        <form action="">
+                                            <select>
+                                                <option value="" selected>
+                                                    Product Name A-Z
+                                                </option>
+                                                <option value="">Lower Price</option>
+                                                <option value="">Higher price</option>
+                                                <option value="">Lowest Price</option>
+                                                <option value="">Highest Price</option>
+                                            </select>
+                                        </form>
+                                    </div>
+
+                                    <div>
+									   <a href="" data-toggle="collapse" data-target="#list"><span class="btn btn-secondary"><i class="fas fa-th-list p-1"></i></span></a>
+									   <a href="" data-toggle="collapse" data-target="#grid"><span class="btn btn-secondary"><i class="fas fa-th p-1"></i></span></a>
+									</div>
+                                </div>
+
+                                <div id="gridList">
+
+                                    <div class=" collapse show" data-parent="#gridList" id="grid">
+                                        <div class="row mt-4">
+                                            <div class="col-md-6 col-lg-3 mb-4">
+                                                <div class="card text-center box scale">
+                                                    <div class="card-body">
+                                                        <img src="images/products/14.jpg" alt="img" class="img-fluid wow fadeInRight"
+                                                             data-wow-delay=".5s"/>
+                                                        <h6>Product Name</h6>
+                                                        <p>Lorem Ipsum is simply dummy text.</p>
+                                                        <h6 class="text-center">$222.00</h6>
+                                                        <div class="row">
+                                                            <!--<a href="" class="btn btn-light"> <i class="fa fa-search-plus"></i></a>-->
+                                                            <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 col-lg-3 mb-4">
+                                                <div class="card text-center box scale">
+                                                    <div class="card-body">
+                                                        <img src="images/products/15.jpg" alt="img" class="img-fluid wow fadeInLeft"
+                                                             data-wow-delay=".5s"/>
+                                                        <h6>Product Name</h6>
+                                                        <p>Lorem Ipsum is simply dummy text.</p>
+                                                        <h6 class="text-center">$222.00</h6>
+                                                        <div class="row justify-content-between">
+                                                            <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 mb-4">
+                                                <div class="card text-center box scale">
+                                                    <div class="card-body">
+                                                        <img src="images/products/16.jpg" alt="img" class="img-fluid wow fadeInRight"
+                                                             data-wow-delay=".5s"/>
+                                                        <h6>Product Name</h6>
+                                                        <p>Lorem Ipsum is simply dummy text.</p>
+                                                        <h6 class="text-center">$222.00</h6>
+                                                        <div class="row justify-content-between">
+                                                            <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 mb-4">
+                                                <div class="card text-center box scale">
+                                                    <div class="card-body">
+                                                        <img src="images/products/14.jpg" alt="img" class="img-fluid wow fadeInRight"
+                                                             data-wow-delay=".5s"/>
+                                                        <h6>Product Name</h6>
+                                                        <p>Lorem Ipsum is simply dummy text.</p>
+                                                        <h6 class="text-center">$222.00</h6>
+                                                        <div class="row justify-content-between">
+                                                            <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-4 mb-5">
+                                            <div class="col-md-6 col-lg-3 mb-4">
+                                                <div class="card text-center box scale">
+                                                    <div class="card-body">
+                                                        <img src="images/products/4.jpg" alt="img" class="img-fluid wow fadeInUp"
+                                                             data-wow-delay=".5s"/>
+                                                        <h6>Product Name</h6>
+                                                        <p>Lorem Ipsum is simply dummy text.</p>
+                                                        <h6 class="text-center">$222.00</h6>
+                                                        <div class="row justify-content-between">
+                                                            <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 mb-4">
+                                                <div class="card text-center box scale">
+                                                    <div class="card-body">
+                                                        <img src="images/products/5.jpg" alt="img" class="img-fluid wow fadeInDown"
+                                                             data-wow-delay=".5s"/>
+                                                        <h6>Product Name</h6>
+                                                        <p>Lorem Ipsum is simply dummy text.</p>
+                                                        <h6 class="text-center">$222.00</h6>
+                                                        <div class="row justify-content-between">
+                                                            <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 mb-4">
+                                                <div class="card text-center box  scale">
+                                                    <div class="card-body">
+                                                        <img src="images/products/13.jpg" alt="img" class="img-fluid wow fadeInUp"
+                                                             data-wow-delay=".5s"/>
+                                                        <h6>Product Name</h6>
+                                                        <p>Lorem Ipsum is simply dummy text.</p>
+                                                        <h6 class="text-center">$222.00</h6>
+                                                        <div class="row justify-content-between">
+                                                            <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 mb-4">
+                                                <div class="card text-center box  scale">
+                                                    <div class="card-body">
+                                                        <img src="images/products/11.jpg" alt="img" class="img-fluid wow fadeInUp"
+                                                             data-wow-delay=".5s"/>
+                                                        <h6>Product Name</h6>
+                                                        <p>Lorem Ipsum is simply dummy text.</p>
+                                                        <h6 class="text-center">$222.00</h6>
+                                                        <div class="row justify-content-between">
+                                                            <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="collapse mt-5" data-parent="#gridList" id="list">
+                                        <div class="row mb-3 border-bottom">
+                                            <div class="col-lg-2 mt-5">
+                                                <img src="images/10.jpg" alt="" class="img-fluid mt-3 scale"/>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h3>New | Available</h3>
+                                                <hr/>
+                                                <h5>Product Name</h5>
+                                                <p>Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - that is why our goods are so popular...
+                                                    <a href="addToCart.html" class="btn btn-light">View Details</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <h5>$140.00</h5>
+
+                                                <form class="form-inline" action="">
+                                                    <label class="mr-1">Adds Products to Compare</label>
+                                                    <input type="checkbox"/>
+                                                </form>
+                                                <div class="mt-4">
+                                                    <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                    <a class="btn btn-light"><i class="fa fa-search-plus"></i></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3 border-bottom">
+                                            <div class="col-lg-2 mt-5">
+                                                <img src="images/10.jpg" alt="" class="img-fluid mt-3 scale"/>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h3>New | Available</h3>
+                                                <hr/>
+                                                <h5>Product Name</h5>
+                                                <p>Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - that is why our goods are so popular...
+                                                    <a href="addToCart.html" class="btn btn-light">View Details</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <h5>$140.00</h5>
+
+                                                <form class="form-inline" action="">
+                                                    <label class="mr-1">Adds Products to Compare</label>
+                                                    <input type="checkbox"/>
+                                                </form>
+                                                <div class="mt-4">
+                                                    <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                    <a class="btn btn-light"><i class="fa fa-search-plus"></i></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3 border-bottom">
+                                            <div class="col-lg-2 mt-5">
+                                                <img src="images/10.jpg" alt="" class="img-fluid mt-3 scale"/>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h3>New | Available</h3>
+                                                <hr/>
+                                                <h5>Product Name</h5>
+                                                <p>Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - that is why our goods are so popular...
+                                                    <a href="addToCart.html" class="btn btn-light">View Details</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <h5>$140.00</h5>
+
+                                                <form class="form-inline" action="">
+                                                    <label class="mr-1">Adds Products to Compare</label>
+                                                    <input type="checkbox"/>
+                                                </form>
+                                                <div class="mt-4">
+                                                    <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                    <a class="btn btn-light"><i class="fa fa-search-plus"></i></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-2 mt-5">
+                                                <img src="images/10.jpg" alt="" class="img-fluid mt-3 scale"/>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h3>New | Available</h3>
+                                                <hr/>
+                                                <h5>Product Name</h5>
+                                                <p>Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - that is why our goods are so popular...
+                                                    <a href="addToCart.html" class="btn btn-light">View Details</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <h5>$140.00</h5>
+
+                                                <form class="form-inline" action="">
+                                                    <label class="mr-1">Adds Products to Compare</label>
+                                                    <input type="checkbox"/>
+                                                </form>
+                                                <div class="mt-4">
+                                                    <a href="addToCart.html" class="btn btn-dark m-auto">ADD TO <i class="fa fa-shopping-cart"></i></a>
+                                                    <a class="btn btn-light"><i class="fa fa-search-plus"></i></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="account">
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-md-3 col-sm-6 wow bounceIn" data-wow-offset="0" data-wow-delay="0.4s">
+                <h5>ACCOUNT INFO</h5>
+                <ul>
+                    <li><a href="">YOUR ACCOUNT</a></li>
+                    <li><a href="">PERSONAL INFORMATION</a></li>
+                    <li><a href="">ADDRESSES</a></li>
+                    <li><a href="">DISCOUNT</a></li>
+                    <li><a href="">ORDER HISTORY</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6  wow bounceIn" data-wow-offset="0" data-wow-delay="1s">
+                <h5>INFORMATION</h5>
+                <ul>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">REGISTRATION</a></li>
+                    <li><a href="">LEGAL NOTICE</a></li>
+                    <li><a href="">TERMS AND CONDITIONS</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6  wow bounceIn" data-wow-offset="0" data-wow-delay="1.5s">
+                <h5>OUR OFFERS</h5>
+                <ul>
+                    <li><a href="">NEW PRODUCTS</a></li>
+                    <li><a href="">TOP SELLERS</a></li>
+                    <li><a href="">SPECIAL OFFERS</a></li>
+                    <li><a href="">MANUFACTURES</a></li>
+                    <li><a href="">SUPPLIERS</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6  wow bounceIn" data-wow-offset="0" data-wow-delay="2s">
+                <h5 class="text-center">SOCIAL MEDIA</h5>
+                <div class="row justify-content-center">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="" height="50" width="50"/></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="" height="50" width="50"/></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="" height="50" width="50"/></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="pt-3 pb-3">
+    <div class="container text-center">
+        <p class="wow bounceInLeft" data-wow-offset="0" data-wow-delay="2s">&copy;Copyright by <a href="https://www.facebook.com/civiljonayet">JonaYet HaSan</a></p>
+        <p class="wow bounceInRight" data-wow-offset="0" data-wow-delay="2s"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">G-MAIL</a></p>
+    </div>
+</footer>
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.elevatezoom.js"></script>
+<script>
+    $('#zoom_01').elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair",
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>>

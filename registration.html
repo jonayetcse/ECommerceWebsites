@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css"/>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <title>Registration</title>
+</head>
+<body class="bg-light">
+
+
+
+<header class="fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Untitled-1.png" alt="logo" width="130" class="img-fluid wow bounceInRight" data-wow-delay=".5s">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item wow fadeInLeft" data-wow-offset="0" data-wow-delay=".1s">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item wow fadeInLeft" data-wow-offset="0" data-wow-delay=".8s">
+                        <a class="nav-link" href="products.html">Products<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item wow fadeInLeft" data-wow-offset="0" data-wow-delay="1.1s">
+                        <a class="nav-link" href="delivery.html">Delivery</a>
+                    </li>
+                    <li class="nav-item wow fadeInLeft" data-wow-offset="0" data-wow-delay="1.4s">
+                        <a class="nav-link" href="contact.html">Contacts</a>
+                    </li>
+                    <li class="nav-item active wow fadeInRight" data-wow-offset="0" data-wow-delay="1.4s" >
+                        <a class="nav-link" href="registration.html">Register</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-success wow fadeInRight" data-toggle="modal" data-target="#loginModal" data-wow-offset="0" data-wow-delay="1.4s">
+                    Login
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Button trigger modal -->
+                <div class="modal fade wow bounceInUp" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light">
+                                <h5 class="modal-title" id="loginModalLabel">Login Blog</h5>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            Remember Me
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Sing In</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+<section id="product" class="mt-3">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-3 col-xl-4 wow bounceInLeft">
+
+                <div class="card bg-light mb-4">
+                    <div class="card-body card-body1">
+                        <img src="images/ico-cart.png" alt=""/>
+                        <a href="">3 items in your cart</a>
+                        <a href="" class="badge-warning">$155.00</a>
+                    </div>
+                </div>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0 text-center">
+                                <button class="btn btn-link text-uppercase" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    electronics
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body bg-light">
+                                <ul class="list-group list-group-flush productA">
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Camera</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Tablets</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Phone</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Visions</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0 text-center">
+                                <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    clothes[100]
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body bg-light">
+                                <ul class="list-group list-group-flush productA">
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Jeans</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Ladies</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Panjabi</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Shari</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0 text-center">
+                                <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    foods[500]
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body bg-light">
+                                <ul class="list-group list-group-flush productA">
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Sandwich</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Biriani</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Banana</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Dairy Milk</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0 text-center">
+                                <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Phone
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body bg-light">
+                                <ul class="list-group list-group-flush productA">
+                                    <a href="#"><li class="list-group-item bg-light">&gt;SAMSUNG</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;TABLETS</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;MICROSOFT</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;SOUND</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0 text-center">
+                                <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    sports
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body bg-light">
+                                <ul class="list-group list-group-flush productA">
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Camera</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Computers</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Mobile</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Sound</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0 text-center">
+                                <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    entertain
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body bg-light">
+                                <ul class="list-group list-group-flush productA">
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Camera</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Tablets[30]</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Mobile</li></a>
+                                    <a href="#"><li class="list-group-item bg-light">&gt;Sound</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="card text-center">-->
+                    <!--<div class="card-body">-->
+                        <!--<img src="images/products/panasonic.jpg" alt="img" class="img-fluid"/>-->
+                        <!--<h6>Panasonic</h6>-->
+                        <!--<span>$222.00</span>-->
+                        <!--<a href="addToCart.html" class="btn btn-dark">ADD TO <i class="fa fa-shopping-cart"></i></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="card text-center">-->
+                    <!--<div class="card-body">-->
+                        <!--<img src="images/products/kindle.png" alt="img" class="img-fluid"/>-->
+                        <!--<h6>Kindle</h6>-->
+                        <!--<span>$222.00</span>-->
+                        <!--<a href="addToCart.html" class="btn btn-dark">ADD TO <i class="fa fa-shopping-cart"></i></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="card text-center">-->
+                    <!--<div class="card-body">-->
+                        <!--<img src="images/payment_methods.png" alt="img" class="img-fluid"/>-->
+                        <!--<h6>Payment Method</h6>-->
+                        <!--<span>$222.00</span>-->
+                        <!--<a href="addToCart.html" class="btn btn-dark">ADD TO <i class="fa fa-shopping-cart"></i></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            </div>
+
+            <div class="col-lg-8 wow bounceInRight">
+                <form>
+                    <h5 class="wow fadeInUp" data-wow-delay=".8s">Your Personal Information</h5>
+                    <div class="form-row wow fadeInUp" data-wow-delay=".8s">
+                        <div class="col-md-3 mb-3">
+                            <label>Title</label>
+                            <select class="select form-control">
+                                <option value="3">Choose</option>
+                                <option selected>Mr.</option>
+                                <option value="1">Miss</option>
+                                <option value="2">Mrs.</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                            <label for="validationServer01">First name</label>
+                            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="JonaYet" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationServer02">Last name</label>
+                            <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="HaSan" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationServerUsername">Date of Birth</label>
+                            <input type="date" class="form-control is-valid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
+                        </div>
+                    </div>
+                    <h5 class="wow fadeInDown" data-wow-delay=".8s">Your Details Information</h5>
+                    <div class="form-row wow fadeInUp" data-wow-delay=".8s">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer03">Email</label>
+                            <input type="email" class="form-control is-valid" id="validationServer03" placeholder="Enter Your Email" required>
+                            <div class="valid-feedback">
+                                Please provide a valid mail.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer04">Password</label>
+                            <input type="password" class="form-control is-valid" id="validationServer04" placeholder="password" required>
+                            <div class="valid-feedback">
+                                More than 8 characters.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer05">City</label>
+                            <input type="text" class="form-control is-valid" id="validationServer05" placeholder="City" required>
+
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer06">State</label>
+                            <input type="text" class="form-control is-valid" id="validationServer06" placeholder="State" required>
+
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer07">Zip</label>
+                            <input type="text" class="form-control is-valid" id="validationServer07" placeholder="Zip" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Country</label>
+                            <select class="select form-control">
+                                <option selected>Bangladesh</option>
+                                <option value="1">India</option>
+                                <option value="2">China</option>
+                                <option value="3">U.S.A</option>
+                                <option value="3">London</option>
+                                <option value="3">Australia</option>
+                                <option value="3">Dubai</option>
+                                <option value="3">Indonesia</option>
+                                <option value="3">Argentina</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer08">Address one</label>
+                            <input type="text" class="form-control is-valid" id="validationServer08" placeholder="Address line one">
+                            <div class="valid-feedback">
+                                Street address, P.O. box, company name, c/o
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer09">Address Two</label>
+                            <input type="text" class="form-control is-valid" id="validationServer09" placeholder="Address line Two">
+                            <div class="valid-feedback">
+                                Apartment, suite, unit, building, floor, etc.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer10">Message</label>
+                            <textarea class="form-control is-valid"  cols="50" rows="5" id="validationServer10" placeholder="Any More Information?"></textarea>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer11">Mobile Phone</label>
+                            <input type="tel" class="form-control is-valid" id="validationServer11" placeholder="+880..">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer12">Upload Your Photo</label>
+                            <input type="file" class="form-control-file" id="validationServer12" placeholder="Choose Your Photo">
+                            <div class="valid-feedback">
+                                Not Exceed 100KB, and Photo Size 300X300
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group wow bounceInRight">
+                        <div class="form-check">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                            <label class="form-check-label" for="invalidCheck3">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark bg-dark wow bounceInRight" data-wow-delay=".8s" type="submit">Submit Your Form</button>
+                </form>
+                <!--<form class="wow bounceInRight">-->
+                    <!--<h3 class="wow fadeInDown" data-wow-delay="1s">Your Personal Information</h3>-->
+                    <!--<div class="form-inline">-->
+                        <!--<label class="col-sm-3" for="title">Title</label>-->
+                        <!--<select class="select" id="title">-->
+                            <!--<option selected>Choose...</option>-->
+                            <!--<option value="1">Mr.</option>-->
+                            <!--<option value="2">Mrs.</option>-->
+                            <!--<option value="3">Miss</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="firstName" class="col-sm-3 col-form-label">First Name</label>-->
+                        <!--<div>-->
+                            <!--<input type="text" class="form-control wow zoomIn" data-wow-delay=".2s" id="firstName" placeholder="First Name">-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="lastName" class="col-sm-3 col-form-label">Last Name</label>-->
+                        <!--<div>-->
+                            <!--<input type="text" class="form-control wow zoomIn" data-wow-delay=".3s" id="lastName" placeholder="Last Name">-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="email" class="col-sm-3 col-form-label">Email</label>-->
+                        <!--<div>-->
+                            <!--<input type="email" class="form-control wow zoomIn" data-wow-delay=".4s" id="email" placeholder="Email">-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="password" class="col-sm-3 col-form-label">Password</label>-->
+                        <!--<div>-->
+                            <!--<input type="password" class="form-control wow zoomIn" data-wow-delay=".5s" id="password" placeholder="Password">-->
+                            <!--<small>Must be 8-20 characters long.</small>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label class="col-sm-3 col-form-label">Date Of Birth</label>-->
+                        <!--<div>-->
+                            <!--<input type="date"  class="form-control wow zoomIn" data-wow-delay=".6s" >-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+
+                    <!--<h3 class="mt-5 wow fadeInDown" data-wow-delay="1.5s">Your Address</h3>-->
+
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="firstName" class="col-sm-3 col-form-label">First Name</label>-->
+                        <!--<div>-->
+                            <!--<input type="text"  class="form-control wow zoomIn" data-wow-delay=".7s" id="firstName" placeholder="First Name">-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="lastName" class="col-sm-3 col-form-label">Last Name</label>-->
+                        <!--<div>-->
+                            <!--<input type="text"  class="form-control wow zoomIn" data-wow-delay=".8s" id="lastName" placeholder="Last Name">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="Company" class="col-sm-3 col-form-label">Company</label>-->
+                        <!--<div>-->
+                            <!--<input type="text"  class="form-control wow zoomIn" data-wow-delay=".9s" id="company" placeholder="Your company">-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="address" class="col-sm-3 col-form-label">Address</label>-->
+                        <!--<div>-->
+                            <!--<input type="text"  class="form-control wow zoomIn" data-wow-delay="1s" id="address" placeholder="Your Address">-->
+                            <!--<small>Street address, P.O. box, company name, c/o</small>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="address2" class="col-sm-3 col-form-label">Address Line 2</label>-->
+                        <!--<div>-->
+                            <!--<input type="text"  class="form-control wow zoomIn" data-wow-delay="1s"  id="address2" placeholder="Your Address Line 2">-->
+                            <!--<small>Apartment, suite, unit, building, floor, etc.</small>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="city" class="col-sm-3 col-form-label">City</label>-->
+                        <!--<div>-->
+                            <!--<input type="text"  class="form-control wow zoomIn" data-wow-delay="1s" id="city" placeholder="Your City">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="state" class="col-sm-3 col-form-label">State</label>-->
+                        <!--<div>-->
+                            <!--<input type="text"  class="form-control wow zoomIn" data-wow-delay="1s" id="state" placeholder="Your State">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="zipCode" class="col-sm-3 col-form-label">Zip Code</label>-->
+                        <!--<div>-->
+                            <!--<input type="number"  class="form-control wow zoomIn" data-wow-delay="1s" id="zipCode" placeholder="Zip Code">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-inline">-->
+                        <!--<label class="col-sm-3">Country</label>-->
+                        <!--<select class="select col-sm-4">-->
+                            <!--<option selected>Bangladesh</option>-->
+                            <!--<option value="1">India</option>-->
+                            <!--<option value="2">China</option>-->
+                            <!--<option value="3">U.S.A</option>-->
+                            <!--<option value="3">London</option>-->
+                            <!--<option value="3">Australia</option>-->
+                            <!--<option value="3">Dubai</option>-->
+                            <!--<option value="3">Indonesia</option>-->
+                            <!--<option value="3">Argentina</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                    <!--<div class="form-inline row mt-3">-->
+                        <!--<label for="message" class="col-sm-3 col-form-label">Message</label>-->
+                        <!--<div>-->
+                            <!--<textarea id="message" cols="50" rows="5">Additional Informations....</textarea>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-inline row mt-3 mb-1">-->
+                        <!--<label class="col-sm-3 col-form-label">Mobile Phone</label>-->
+                        <!--<div>-->
+                            <!--<input type="tel"  class="form-control wow zoomIn" data-wow-delay="1s"  placeholder="Your Phone Number">-->
+                            <!--<small>You must register at least one phone number</small>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-inline row mt-3 mb-1">-->
+                        <!--<label class="col-sm-3 col-form-label">Your Photo<sup>*</sup></label>-->
+                        <!--<div>-->
+                            <!--<input type="file" class="form-control-file wow zoomIn" id="photo">-->
+                            <!--<small>Not Exceed 100KB, and Photo Size 300X300 </small>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<button type="submit" class="btn btn-info mt-5 ml-5 wow bounceInDown" data-wow-delay="1s">Register</button>-->
+                <!--</form>-->
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!--accountInfo-->
+
+
+<section id="account">
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-md-3 col-sm-6 wow bounceIn" data-wow-offset="0" data-wow-delay="0.4s">
+                <h5>ACCOUNT INFO</h5>
+                <ul>
+                    <li><a href="">YOUR ACCOUNT</a></li>
+                    <li><a href="">PERSONAL INFORMATION</a></li>
+                    <li><a href="">ADDRESSES</a></li>
+                    <li><a href="">DISCOUNT</a></li>
+                    <li><a href="">ORDER HISTORY</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6  wow bounceIn" data-wow-offset="0" data-wow-delay="1s">
+                <h5>INFORMATION</h5>
+                <ul>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">REGISTRATION</a></li>
+                    <li><a href="">LEGAL NOTICE</a></li>
+                    <li><a href="">TERMS AND CONDITIONS</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6  wow bounceIn" data-wow-offset="0" data-wow-delay="1.5s">
+                <h5>OUR OFFERS</h5>
+                <ul>
+                    <li><a href="">NEW PRODUCTS</a></li>
+                    <li><a href="">TOP SELLERS</a></li>
+                    <li><a href="">SPECIAL OFFERS</a></li>
+                    <li><a href="">MANUFACTURES</a></li>
+                    <li><a href="">SUPPLIERS</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6  wow bounceIn" data-wow-offset="0" data-wow-delay="2s">
+                <h5 class="text-center">SOCIAL MEDIA</h5>
+                <div class="row justify-content-center">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="" height="50" width="50"/></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="" height="50" width="50"/></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="" height="50" width="50"/></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="pt-3 pb-3">
+    <div class="container text-center">
+        <p class="wow bounceInLeft" data-wow-offset="0" data-wow-delay="2s">&copy;Copyright by <a href="https://www.facebook.com/civiljonayet">JonaYet HaSan</a></p>
+        <p class="wow bounceInRight" data-wow-offset="0" data-wow-delay="2s"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">G-MAIL</a></p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</html>
