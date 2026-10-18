@@ -1,0 +1,225 @@
+
+@import url(fontawesome-all.min.css);
+
+
+body{
+	padding-top:70px;
+
+}
+
+header .navbar{
+	text-transform: uppercase;
+}
+header{
+    background-color: #586080;
+    opacity: .9;
+}
+header .nav-item{
+    margin-right: 20px;
+    background-color:transparent;
+    opacity: .9;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+    transition:.5s ease-out;
+
+}
+header .nav-item a{
+    color: #ffffff !important;
+	transition:.5s;
+}
+header .nav-item:hover{
+	background-color:#DD5044;
+	padding-right: 30px;
+        padding-left: 30px;
+	border-radius:10px;
+
+
+}
+
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #91c5a9;
+    border-radius: 100%;
+}
+.carousel-indicators .active{
+    background-color: #36cbd4;
+}
+
+.modifiedIcon{
+    background-color: #36cbd4;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 3px dashed #ffffff;
+}
+.modifiedIcon{
+    background-color: #36cbd4;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 3px dashed #ffffff;
+}
+
+
+
+.box{
+    -webkit-box-shadow: 0px 1px 10px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 10px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 10px 5px rgba(0,0,0,0.75);
+}
+
+.scale:hover{
+    transition: .5s ease-in-out;
+    transform: scale(1.1);
+}
+.navbar .active{
+    background-color: #DD5044!important;
+}
+.card-body1{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+
+
+}
+
+.productA a{
+    color: #000000;
+}
+
+.btn-link{
+    color: #000000;
+    text-decoration: none;
+}
+
+.col-lg-8{
+    font-size: 14px;
+}
+
+#accordionExample button{
+    background-color:transparent;
+}
+
+#accordionDelivery button{
+    background-color: transparent;
+}
+#accordionDelivery .card-header{
+    background-color: #36cbd4;
+    opacity: .6;
+}
+
+
+#mail i{
+    text-align: center;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    background-color: #E59704;
+    padding-top: 35px;
+    color: white;
+    font-size: 35px;
+
+
+}
+#mail i:hover {
+    background-color: #0D59AF;
+    border: 3px solid #E59704;
+    transition: .5s;
+    transform: rotate(360deg);
+}
+#mail h2, h4{
+    color: #0D59AF;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #0D59AF;
+}
+
+/*Maps*/
+
+.gmap_canvas{
+    padding: 5px;
+    border: 3px solid #E59704;
+}
+
+
+
+#account{
+    margin-top: 25px;
+    color: #ffffff;
+    background-color: #202020;
+    /*opacity: .8;*/
+
+}
+
+#account ul li{
+    list-style: none;
+    text-align: left;
+}
+#account ul li a{
+    color: #ffffff;
+    font-size: 14px;
+}
+#account h5{
+    margin-left: 40px;
+}
+
+
+footer{
+    background-color: #202020; 
+	color: #ffffff;
+}
+footer a{
+    background-color: #202020; 
+	color: #36cbd4;
+}
+
+
+#moreDetails .nav .active{
+    background-color: #23272B;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Style for Responsive breakpoints*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+/*@media (max-width: 575.98px) {*/
+    /*#carouselExampleControls{*/
+        /*visibility: hidden;*/
+    /*}*/
+/*}*/
+/* Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) {*/
+    /*#col_none{*/
+        /*visibility: hidden;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 575.98px) {*/
+    /*#carousel{*/
+        /*visibility: hidden;*/
+    /*}*/
+/*}*/
+
+
+button, .btn{
+	background-color:#36cbd4;
+}
+
+
